@@ -32,9 +32,9 @@ int main(int argc, char **argv) {
 ```
 
 ### Entrada
-<p>O seu programa será invocado com parâmetros na linha de comando, que representam arquivos, por exemplo:</p>
-```./solucao arquivo1 arquivo2 arquivo3```
-<p>Você pode considerar que serão passados até 2000 arquivos como argumento para o seu programa.
+<p>O seu programa será invocado com parâmetros na linha de comando, que representam arquivos, por exemplo: ./solucao arquivo1 arquivo2 arquivo3
+  
+Você pode considerar que serão passados até 2000 arquivos como argumento para o seu programa.
 
 Cada arquivo pode conter um tamanho que varia de 1 byte até 300
 MegaBytes. E cada arquivo pode ser tanto binário como de texto.</p>
