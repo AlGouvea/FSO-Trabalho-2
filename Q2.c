@@ -26,8 +26,7 @@ int main(int argc, char **argv) {
 		for(int j = i+1; j < argc; j++) {
 			//Abre segundo arquivo
 			currentFile = fopen(argv[j], "rb");
-			
-			//Pegar tamanho
+
 			fseek(currentFile, 0, SEEK_END);
 			fSize2 = ftell(currentFile);
 
@@ -37,13 +36,10 @@ int main(int argc, char **argv) {
 				char *newFile;
 				newFile = (char *)malloc(fSize2 * sizeof(char));
 
-				//Reinicia
 				rewind(currentFile);
-
-				//Le e compara
 				fread(newFile, fSize2, 1, currentFile);
 
-				//Procura Erros
+				//Procura Diferencas
 				for(int k = 0; k < fSize; k++){
 					if(buffer[k] != newFile[k]){
 						igual = 0;
