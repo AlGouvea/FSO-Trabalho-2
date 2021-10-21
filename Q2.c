@@ -43,6 +43,7 @@ int main(int argc, char **argv) {
 				//Le e compara
 				fread(newFile, fSize2, 1, currentFile);
 
+				//Procura Erros
 				for(int k = 0; k < fSize; k++){
 					if(buffer[k] != newFile[k]){
 						igual = 0;
@@ -53,6 +54,7 @@ int main(int argc, char **argv) {
 				igual = 0;
 			}
 
+			//Printa resultado
 			if(igual == 0) {
 				printf("%s %s diferentes\n", argv[i], argv[j]);
 			} else {
