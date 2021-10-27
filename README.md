@@ -26,15 +26,19 @@ A entrada termina em EOF.</p>
 Para determinar se arquivos são iguais ou diferentes você deve comparar todos os bytes dos dois arquivos. E, claro, se os tamanhos forem diferentes você já pode considerar que os arquivos são diferentes.
 
 Para tratar os parâmetros você deve utilizar os parâmetros argc e argv, da main. A maneira mais comum é declarando a sua função principal da seguinte maneira:</p>
-```
+```c
 int main(int argc, char **argv) {
 }
 ```
 
 ### Entrada
-<p>O seu programa será invocado com parâmetros na linha de comando, que representam arquivos, por exemplo: ./solucao arquivo1 arquivo2 arquivo3
+<p>O seu programa será invocado com parâmetros na linha de comando, que representam arquivos, por exemplo: </p>
+
+```c
+./solucao arquivo1 arquivo2 arquivo3
+```
   
-Você pode considerar que serão passados até 2000 arquivos como argumento para o seu programa.
+<p>Você pode considerar que serão passados até 2000 arquivos como argumento para o seu programa.
 
 Cada arquivo pode conter um tamanho que varia de 1 byte até 300
 MegaBytes. E cada arquivo pode ser tanto binário como de texto.</p>
@@ -53,7 +57,7 @@ O desejo de professor Chaos é muito simples. Ele possui duas sementes para gera
 <p>A entrada possui um único caso de teste contendo um número indeterminado de linhas.
 
 A primeira possui dois números inteiros sem sinal, S1 e S2, representanto, respectivamente, a primeira semente e a segunda semente.</p>
-```python
+```c
 Use rand_r() para gerar os números pseudo-aleatórios
 ```
 <p>Depois da primeira linha existirão diversas linhas contendo dois inteiros M_i e B_i, representando, respectivamente, MÓDULO (em C representado pelo sinal %) e o número que seja se procurar.</p>
