@@ -41,3 +41,22 @@ MegaBytes. E cada arquivo pode ser tanto binário como de texto.</p>
 
 ### Saída
 <p>Para cada par você deverá imprimir os nomes dos arquivos e a string iguais quando os arquivos forem idênticos e diferentes se tiverem ao menos 1 byte diferente.</p>
+
+## Questão 3 - Procurando pseudo-aleatórios modulados
+
+### Enunciado
+<p>A pacata cidade de South Park nada de pacata tem. Butters, digo, Professor Chaos está aterrorizando mais uma vez! Ele busca o que ninguém jamais procurou, as ocorrências de alguns números pseudo-aleatórios modulares!
+O desejo de professor Chaos é muito simples. Ele possui duas sementes para geração de números pseudo-aleatórios e precisa saber quantas ocorrências de alguns números ocorrem a cada 100000 (isso mesmo cem mil) gerações de números pseudo-aleatórios para as duas sementes que ele possui.</p>
+
+
+### Entrada
+<p>A entrada possui um único caso de teste contendo um número indeterminado de linhas.
+
+A primeira possui dois números inteiros sem sinal, S1 e S2, representanto, respectivamente, a primeira semente e a segunda semente.</p>
+```python
+Use rand_r() para gerar os números pseudo-aleatórios
+```
+<p>Depois da primeira linha existirão diversas linhas contendo dois inteiros M_i e B_i, representando, respectivamente, MÓDULO (em C representado pelo sinal %) e o número que seja se procurar.</p>
+
+### Saída
+<p>Para cada linha contendo M_i e B_i você deve responder quantas ocorrências de B_i aconteceram para cada um dos 200000 números (100000 de cada semente) pseudo-aleatórios módulo M_i.</p>
